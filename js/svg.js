@@ -318,4 +318,4 @@ var next = function(){
     timer = addTimer();
     games[i].start();
 };
-//next();
+next();
