@@ -1,16 +1,29 @@
-<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-<meta content="utf-8" http-equiv="encoding">
 <!DOCTYPE html>
 <html>
-  <style>
-    #c {border : 1px solid black}
-  </style>
-  <h1>Thing</h1>
-  <div>
-    Time: <input type="text" value="" id="time" readonly> seconds<br>
-    <canvas height="500" width="500" id="c">
-    </canvas>
-  </div>
-  <button id="restart">restart</button>
-  <script src="js/blocks.js"></script>
+  <head>
+    <style>
+      #s {border: 1px solid;}
+    </style>
+  </head>
+  <body>
+    <p id="points">
+      Points: 0
+    </p>
+    <p id="lives">
+      Lives: 3
+    </p>
+    <svg class="where" id="s" height=400 width=600>
+      <!--
+      <rect id="timer" fill="red" x="0" y="50" width="600" height="20"
+	    style="stroke:black;stroke-width:1">
+      <circle id="c1" cx=100 cy=100 r=100 fill="red"></circle>
+      <ellipse id="fire" cx="300" cy="300" rx="100" ry="200"
+	       style="fill:orange;stroke:red;stroke-width:2" />
+      <ellipse id="person" cx="300" cy="300" rx="50" ry="100"
+	       style="fill:blue;stroke:black;stroke-width:2" />
+      -->
+    </svg>
+    <input type="submit" id="go" value="go">
+    <script src="js/svg.js"></script>
+  </body>
 </html>
